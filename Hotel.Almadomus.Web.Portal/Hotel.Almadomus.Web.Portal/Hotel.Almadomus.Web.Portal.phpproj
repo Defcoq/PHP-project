@@ -49,12 +49,15 @@
     <Compile Include="GestioneSito\Login_PHP_Bootsrap\__MACOSX\._secret.php" />
     <Compile Include="GestioneSito\logout.php" />
     <Compile Include="GestioneSito\read_Admin_User.php" />
+    <Compile Include="GestioneSito\read_Eventi_Descrizione.php" />
     <Compile Include="GestioneSito\register.php" />
     <Compile Include="GestioneSito\dashbord.php" />
     <Compile Include="GestioneSito\update_Admin_User.php" />
     <Compile Include="index.php" />
+    <Compile Include="GestioneSito\read_Eventi.php" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="content\" />
     <Folder Include="GestioneSito\" />
     <Folder Include="GestioneSito\assets\" />
     <Folder Include="GestioneSito\assets\css\" />
@@ -77,8 +80,13 @@
     <Folder Include="GestioneSito\Login_PHP_Bootsrap\assets\" />
     <Folder Include="GestioneSito\Login_PHP_Bootsrap\__MACOSX\" />
     <Folder Include="GestioneSito\Login_PHP_Bootsrap\__MACOSX\assets\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\toastr.css" />
+    <Content Include="content\toastr.less" />
+    <Content Include="content\toastr.min.css" />
+    <Content Include="content\toastr.scss" />
     <Content Include="GestioneSito\assets\abbeybound.jpg" />
     <Content Include="GestioneSito\assets\bglight.png" />
     <Content Include="GestioneSito\assets\bootstrap-responsive.min.css" />
@@ -190,12 +198,14 @@
     <Content Include="GestioneSito\bootstrap-datepicker\locales\bootstrap-datepicker.zh-TW.min.js" />
     <Content Include="GestioneSito\chart.html" />
     <Content Include="GestioneSito\css\bootstrap.min.css" />
+    <Content Include="GestioneSito\css\editor.css" />
     <Content Include="GestioneSito\error_log" />
     <Content Include="GestioneSito\form.html" />
     <Content Include="GestioneSito\img\glyphicons-halflings-white.png" />
     <Content Include="GestioneSito\img\glyphicons-halflings.png" />
     <Content Include="GestioneSito\img\Google-Analytics-Dashboard-Large.jpg" />
     <Content Include="GestioneSito\js\bootstrap.min.js" />
+    <Content Include="GestioneSito\js\editor.js" />
     <Content Include="GestioneSito\Login_PHP_Bootsrap\assets\abbeybound.jpg" />
     <Content Include="GestioneSito\Login_PHP_Bootsrap\assets\bglight.png" />
     <Content Include="GestioneSito\Login_PHP_Bootsrap\assets\bootstrap-responsive.min.css" />
@@ -209,5 +219,11 @@
     <Content Include="GestioneSito\tab-panel.html" />
     <Content Include="GestioneSito\table.html" />
     <Content Include="GestioneSito\ui.html" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-1.6.3-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.3.js" />
+    <Content Include="Scripts\jquery-1.6.3.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
   </ItemGroup>
 </Project>

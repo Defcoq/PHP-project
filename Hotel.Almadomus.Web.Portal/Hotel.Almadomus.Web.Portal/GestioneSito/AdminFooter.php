@@ -15,4 +15,6 @@
 
     <script src="assets/js/custom.js"></script>
     <script src="bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/toastr.min.js"></script>
    
