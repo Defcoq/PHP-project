@@ -1,5 +1,6 @@
 <!-- BOOTSTRAP STYLES--> 
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
      <link href="bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />

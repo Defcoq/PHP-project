@@ -17,4 +17,36 @@
     <script src="bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
     <script src="js/editor.js"></script>
     <script src="js/toastr.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+        var pgurl = window.location.href.split('?')[0].substr(window.location.href.lastIndexOf("/") + 1);
+        console.log(pgurl);
+        $("#main-menu li a").each(function () {
+            if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
+                $(this).addClass("active-menu");
+        });
+
+
+        //$('#main-menu li a').click(function (e) {
+        //    e.preventDefault();
+
+        //    $.ajax({
+        //        type: "GET",
+        //        url: pgurl,
+        //        data: {
+        //            current_active_menu: '3'
+        //        },
+        //        success: function (data) {
+        //            alert(data);
+
+        //        }
+        //    });
+        //});
+       
+       
+    });
+</script>
    

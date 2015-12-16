@@ -32,6 +32,7 @@
         $sql = "SELECT E.title as titoloTestata, E.place, E.start_date, E.end_date, EL.title as titoloEvento, EL.description FROM Eventi as E inner join EventiLingua as EL on E.event_id =EL.event_id where E.event_id = ? and EL.lingua_id=?";
 
         $q = $pdo->prepare($sql);
+       
 
         $q->execute(array($id,$lingua_id));
 
@@ -172,8 +173,6 @@
                       </div>
                     </div>
 
-                    
-                   
                       <br />
                       <br/>
                        <div class="row">
@@ -183,9 +182,7 @@
                         </div>
                      </div>
                     </form>
-
-
-
+            
              </div>
              <!-- /. PAGE INNER  -->
             </div>
@@ -201,10 +198,12 @@
 	{
 	    //alert("Jquery funziona");
 		$('#EventDate').datepicker({
-         });
+		});
+
+		
 	});
 
-
+ 
 	</script>
 
 

@@ -17,18 +17,19 @@
     <div id="wrapper">
       <?php
        include('AdminHeader.php');
-       ?>
+      ?>
         <div id="page-wrapper" >
-            <div id="page-inner">
-              <div class="container">
+            <div id="page-inner"> 
     		<div class="row">
     			<h3>Hotel Almadomus Gestione Utenti Sito</h3>
     		</div>
-			<div class="row">
+                
+                <div class="row">
 				<p>
-					<a href="create_Admin_User.php" class="btn btn-success">Crea Nuovo Utente</a>
+					<a href="create_Admin_User.php?current_active_menu=2" class="btn btn-success">Crea Nuovo Utente</a>
 				</p>
-				
+                 </div>
+			<div class="row">
                   <div class="table-responsive">
 				<table id="table_Gestione_Utenti_Sito" class="table table-striped table-bordered table-hover">
 		              <thead>
@@ -55,15 +56,15 @@
 
                                 echo '<td width=250>';
 
-                                echo '<a class="btn btn-primary" href="read_Admin_User.php?id='.$row['id'].'">Legge</a>';
+                                echo '<a class="btn btn-primary" href="read_Admin_User.php?current_active_menu=2&id='.$row['id'].'">Legge</a>';
 
                                 echo ' ';
 
-                                echo '<a class="btn btn-success" href="update_Admin_User.php?id='.$row['id'].'">Aggiorna</a>';
+                                echo '<a class="btn btn-success" href="update_Admin_User.php?current_active_menu=2&id='.$row['id'].'">Aggiorna</a>';
 
                                 echo ' ';
 
-                                echo '<a class="btn btn-danger" href="delete_Admin_User.php?id='.$row['id'].'">Elimina</a>';
+                                echo '<a class="btn btn-danger" href="delete_Admin_User.php?current_active_menu=2&id='.$row['id'].'">Elimina</a>';
 
                                 echo '</td>';
 
@@ -71,17 +72,17 @@
 
                        }
 					   Database::disconnect();
-					  ?>
+                      ?>
 				      </tbody>
 	            </table>
             </div>
     	</div>
-    </div> <!-- /container -->
              </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
+     
      <!-- /. WRAPPER  -->
    <?php 
    include('AdminFooter.php');
@@ -98,7 +99,7 @@
 
     </script>
 
-	</script>
+
 
 </body>
 </html>

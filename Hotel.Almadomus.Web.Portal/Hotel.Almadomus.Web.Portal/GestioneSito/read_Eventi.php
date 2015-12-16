@@ -7,7 +7,7 @@
 
     $id = null;
 
-    if ( !empty($_GET['event_id'])) {
+    if (!empty($_GET['event_id'])) {
 
         $id = $_REQUEST['event_id'];
 
@@ -170,15 +170,15 @@
 
                                 echo '<td width=250>';
 
-                                echo '<a class="btn btn-primary" href="read_Eventi_Descrizione.php?event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">legge</a>';
+                                echo '<a class="btn btn-primary" href="read_Eventi_Descrizione.php?current_active_menu=3&event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">legge</a>';
 
                                 echo ' ';
 
-                                echo '<a class="btn btn-success" href="update_Eventi_Descrizione.php?event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">aggiorna</a>';
+                                echo '<a class="btn btn-success" href="update_Eventi_Descrizione.php?current_active_menu=3&event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">aggiorna</a>';
 
                                 echo ' ';
 
-                                echo '<a class="btn btn-danger" href="delete_Eventi_Descrizione.php?event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">Elimina</a>';
+                                echo '<a class="btn btn-danger" href="delete_Eventi_Descrizione.php?current_active_menu=3&event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">Elimina</a>';
 
                                 echo '</td>';
 

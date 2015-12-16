@@ -17,17 +17,20 @@
     <div id="wrapper">
       <?php
        include('AdminHeader.php');
-       ?>
+      ?>
         <div id="page-wrapper" >
             <div id="page-inner">
-              <div class="container">
+
     		<div class="row">
     			<h3>Hotel Almadomus Gestione Eventi Sito</h3>
     		</div>
+            <div class="row">
+             <p>
+					<a href="Create_Eventi.php?current_active_menu=3" class="btn btn-success">Crea Nuovo Evento</a>
+                     <a href="../Italiano/Eventi_Siena_Italiano.php" class="btn btn-success">Visualizza eventi nel sito</a>
+		   </p>
+            </div>
 			<div class="row">
-				<p>
-					<a href="Create_Eventi.php" class="btn btn-success">Crea Nuovo Evento</a>
-				</p>
 				
                   <div class="table-responsive">
 				<table id="table_Gestione_Eventi_Sito" class="table table-striped table-bordered table-hover">
@@ -85,17 +88,17 @@
 								 echo '<td>'. $update_date . '</td>';
                                  
 
-                                echo '<td width=250>';
+                                echo '<td width=450>';
 
-                                echo '<a class="btn btn-primary" href="read_Eventi.php?event_id='.$row['event_id'].'">legge</a>';
-
-                                echo ' ';
-
-                                echo '<a class="btn btn-success" href="read_Eventi.php?event_id='.$row['event_id'].'">aggiorna</a>';
+                                echo '<a class="btn btn-primary" href="read_Eventi.php?current_active_menu=3&event_id='.$row['event_id'].'">legge</a>';
 
                                 echo ' ';
 
-                                echo '<a class="btn btn-danger" href="read_Eventi.php?event_id='.$row['event_id'].'">Elimina</a>';
+                                echo '<a class="btn btn-success" href="Update_Eventi.php?current_active_menu=3&event_id='.$row['event_id'].'">aggiorna</a>';
+
+                                echo ' ';
+
+                                echo '<a class="btn btn-danger" href="Delete_Eventi.php?current_active_menu=3&event_id='.$row['event_id'].'">Elimina</a>';
 
                                 echo '</td>';
 
@@ -103,16 +106,17 @@
 
                        }
 					   Database::disconnect();
-					  ?>
+                      ?>
 				      </tbody>
 	            </table>
             </div>
     	</div>
-    </div> <!-- /container -->
+    
              </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
+
         </div>
      <!-- /. WRAPPER  -->
    <?php 
@@ -130,7 +134,7 @@
 
     </script>
 
-	</script>
+	
 
 </body>
 </html>

@@ -17,10 +17,11 @@
     <div id="wrapper">
       <?php
        include('AdminHeader.php');
-       ?>
+      ?>
+   
         <div id="page-wrapper" >
             <div id="page-inner">
-              <div class="container">
+            
     		<div class="row">
     			<h3>Hotel Almadomus Gestion Utenti Sito</h3>
     		</div>
@@ -79,17 +80,18 @@
 
                        }
 					   Database::disconnect();
-					  ?>
+                      ?>
 				      </tbody>
 	            </table>
             </div>
     	</div>
-    </div> <!-- /container -->
+  
              </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
         </div>
+   
      <!-- /. WRAPPER  -->
    <?php 
    include('AdminFooter.php');
@@ -106,7 +108,7 @@
 
     </script>
 
-	</script>
+	
 
 </body>
 </html>

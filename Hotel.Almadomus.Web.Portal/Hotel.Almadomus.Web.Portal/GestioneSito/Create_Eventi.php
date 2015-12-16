@@ -458,7 +458,7 @@
 		              <tbody>
 		              <?php
 					   $pdo = Database::connect();
-					   $sql = 'SELECT E.event_id,EL.title,EL.description as descrizioneEvento, L.description as linguaEvento FROM Eventi as E inner join EventiLingua as EL on E.event_id = EL.event_id inner join Lingua as L on EL.lingua_id=L.lingua_id where E.event_id='.$event_id;
+					   $sql = 'SELECT E.event_id,EL.title,EL.description as descrizioneEvento, L.description as linguaEvento, L.lingua_id FROM Eventi as E inner join EventiLingua as EL on E.event_id = EL.event_id inner join Lingua as L on EL.lingua_id=L.lingua_id where E.event_id='.$event_id;
                        if(!empty($event_id))
                        {
 	 				    foreach ($pdo->query($sql) as $row) {
@@ -475,15 +475,15 @@
 
                                 echo '<td width=250>';
 
-                                echo '<a class="btn btn-primary" href="read_Eventi_Descrizione.php?event_id='.$row['event_id'].'">legge</a>';
+                                echo '<a class="btn btn-primary" href="read_Eventi_Descrizione.php?current_active_menu=3&event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">legge</a>';
 
                                 echo ' ';
 
-                                echo '<a class="btn btn-success" href="update_Eventi_Descrizione.php?event_id='.$row['event_id'].'">aggiorna</a>';
+                                echo '<a class="btn btn-success" href="update_Eventi_Descrizione.php?current_active_menu=3&event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">aggiorna</a>';
 
                                 echo ' ';
 
-                                echo '<a class="btn btn-danger" href="delete_Eventi_Descrizione.php?event_id='.$row['event_id'].'">Elimina</a>';
+                                echo '<a class="btn btn-danger" href="delete_Eventi_Descrizione.php?current_active_menu=3&event_id='.$row['event_id'].'&lingua_id='.$row['lingua_id'].'">Elimina</a>';
 
                                 echo '</td>';
 
@@ -517,7 +517,7 @@
    include('AdminFooter.php');
    ?>
 
-    	<script>
+  <script type="text/javascript">
 	$(document).ready(function()
 	{
     toastr.options = {
@@ -584,7 +584,7 @@
           {
          // alert($("#description").Editor("getText"));
           console.log($("#description").Editor("getText"));
-           $("#txtEditorContent").val($("#description").Editor("getText"));
+          $("#txtEditorContent").val($("#description").Editor("getText"));
          });
 	</script>
 
