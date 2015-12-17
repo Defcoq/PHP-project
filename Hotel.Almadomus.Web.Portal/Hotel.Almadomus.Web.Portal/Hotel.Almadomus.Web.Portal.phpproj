@@ -29,6 +29,7 @@
     <Compile Include="GestioneSito\conttati.php" />
     <Compile Include="GestioneSito\create_Admin_User.php" />
     <Compile Include="GestioneSito\Create_Eventi.php" />
+    <Compile Include="GestioneSito\Create_OffertaSpeciale.php" />
     <Compile Include="GestioneSito\database.php" />
     <Compile Include="GestioneSito\delete_Admin_User.php" />
     <Compile Include="GestioneSito\Delete_Eventi.php" />
@@ -58,8 +59,10 @@
     <Compile Include="GestioneSito\Login_PHP_Bootsrap\__MACOSX\._register.php" />
     <Compile Include="GestioneSito\Login_PHP_Bootsrap\__MACOSX\._secret.php" />
     <Compile Include="GestioneSito\logout.php" />
+    <Compile Include="GestioneSito\News_Widget.php" />
     <Compile Include="GestioneSito\read_Admin_User.php" />
     <Compile Include="GestioneSito\read_Eventi_Descrizione.php" />
+    <Compile Include="GestioneSito\read_OffertaSpeciale.php" />
     <Compile Include="GestioneSito\register.php" />
     <Compile Include="GestioneSito\dashbord.php" />
     <Compile Include="GestioneSito\update_Admin_User.php" />

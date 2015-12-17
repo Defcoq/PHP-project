@@ -125,95 +125,9 @@ include('HeaderCssGestioneSito.php');
                             
                                              <div class="row">
                                                     <div >
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>News</b></div>
-                                                            <div class="panel-body">
-                                                                <div class="row">
-                                                                    <div class="col-xs-12">
-                                                                        <ul style="overflow-y: hidden; height: 300px;" class="demo1">
-
-
-
-
-
-
-
-                                                                            <li style="" class="news-item">
-                                                                                <table cellpadding="4">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><img src="assets/images/5.png" class="img-circle" width="60"></td>
-                                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </li>
-                                                                            <li style="" class="news-item">
-                                                                                <table cellpadding="4">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><img src="assets/images/6.png" class="img-circle" width="60"></td>
-                                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </li>
-                                                                            <li style="" class="news-item">
-                                                                                <table cellpadding="4">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><img src="assets/images/7.png" class="img-circle" width="60"></td>
-                                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </li>
-                                                                            <li style="display:none;" class="news-item">
-                                                                                <table cellpadding="4">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><img src="assets/images/1.png" class="img-circle" width="60"></td>
-                                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </li>
-                                                                            <li style="display:none;" class="news-item">
-                                                                                <table cellpadding="4">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><img src="assets/images/2.png" class="img-circle" width="60"></td>
-                                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </li>
-                                                                            <li style="display:none;" class="news-item">
-                                                                                <table cellpadding="4">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><img src="assets/images/3.png" class="img-circle" width="60"></td>
-                                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </li>
-                                                                            <li style="display:none;" class="news-item">
-                                                                                <table cellpadding="4">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><img src="assets/images/4.png" class="img-circle" width="60"></td>
-                                                                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                           <div class="panel-footer"> </div>
-                                                        </div>
+                                                <?php 
+                                                include "News_Widget.php" ;
+                                                 ?>
                                                     </div>
                                                 </div>
                         </div>
